@@ -39,7 +39,7 @@
     /* Rotate img */
     --rotate-img: rotate(-30deg);
     }
-    @media screen and (min-width: 768px){
+    /* @media screen and (min-width: 768px){ */
         :root{
         --big-font-size: 1.5rem;
         --bigger-font-size: 2rem;
@@ -47,7 +47,7 @@
         --normal-font-size: 1rem;
         --smaller-font-size: .875rem;  
         }
-    }
+    /* } */
 
     /* Base */
     *,::before,::after{
@@ -113,15 +113,15 @@
     }
 
     /* LAYOUT */
-    .bd-grid{
-        max-width: 1024px;
+    .bd-grid{ 
+        max-width: 95%;
         display: grid;
         grid-template-columns: 100%;
         column-gap: 2rem;
         width: calc(100% - 2rem);
-        margin-left: var(--mb-2);
-        margin-right: var(--mb-2);
-    }
+        margin-left: var(--mb-6);
+        margin-right: var(--mb-6);
+    } 
 
     .l-header{
         width: 100%;
@@ -139,18 +139,18 @@
         align-items: center;
 
     }
-    @media screen and (max-width: 768px){
+    /* @media screen and (max-width: 768px){ */
         .nav__menu{
             position: fixed;
-            top: var(--header-height);
-            left: -100%;
+            top: var(--header-height); 
+            left: -100%; 
             width: 70%;
             height: 100vh;
             padding: 2rem;
             background-color: var(--white-color);
-            transition: .5s;
+            transition: .5s; 
         }
-    }
+    /* } */
 
     .nav__item{
         margin-bottom: var(--mb-4);
@@ -227,20 +227,45 @@
         font-size: var(--smaller-font-size);
         font-weight: var(--font-semi-bold);
         margin-bottom: var(--mb-2);
+      
     }
 
     .home__title{
         font-size: var(--bigger-font-size);
         margin-bottom: var(--mb-1);
+    
+
     }
 
     .home__description{
         margin-bottom: var(--mb-6);
+        
     }
 
     /* BUTTONS */
+    .button{
+        display: inline-block;
+        background-color: var(--dark-color);
+        color: var(--white-color);
+        padding: 1.125rem 2rem;
+        font-weight: var(--font-medium);
+        border-radius: .5rem;
+        transition: .3s;
+
+    }
+
+    .button:hover{
+        transform: translateY(-.25rem);
+    }
+
 
     /* FEATURED */
+
+    .featured__container{
+        row-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
 
     /* COLLECTION */
 

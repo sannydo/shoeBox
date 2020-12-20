@@ -57,7 +57,7 @@
 
 /* Fix this  */
     html{
-       scroll-behavior: smooth; 8:08 
+       scroll-behavior: smooth;  
     }
 
     body{
@@ -139,6 +139,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
 
     }
     /* @media screen and (max-width: 768px){ */
@@ -151,6 +152,7 @@
             padding: 2rem;
             background-color: var(--white-color);
             transition: .5s; 
+            z-index: 1000
         }
     /* } */
 
@@ -198,6 +200,7 @@
         overflow: hidden;
     }
 
+    /* Code below helps the image from being too high up and cut off */
     .home__container{
         height: calc(100vh - var(--header-height));
     }
@@ -286,6 +289,8 @@
     .featured__container{
         row-gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        
+        
     }
 
     .sneaker{
@@ -297,6 +302,7 @@
         background-color: var(--dark-color-lighten);
         border-radius: .5rem;
         transition: .3s;
+        
     }
 
     .sneaker__sale{
@@ -309,6 +315,7 @@
         font-size: var(--h1-font-size);
         transform: rotate(-90deg);
         letter-spacing: .1rem;
+       
     }
 
     /* these names match up with the names in html */

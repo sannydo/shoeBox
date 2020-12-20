@@ -434,7 +434,31 @@
         transform: translateY(-.5rem);
     }
 
-    /* NEW COLLECTION */
+    /* NEW SECTION */
+
+    .new__container{
+        row-gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    
+    /* Need to add image */
+    /* .new__img */
+
+    /* .new__card{
+
+    }
+
+    .new__data{
+
+    }
+
+    .new__name{
+
+    }
+
+    .new__description{
+
+    } */
 
     /* NEWSLETTER */
 

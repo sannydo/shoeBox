@@ -1,4 +1,7 @@
 // Menu Show
+// This code opens the nav bar 
+
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -11,6 +14,12 @@ const showMenu = (toggleId, navId) =>{
 }
 
 showMenu('nav-toggle','nav-menu')
+// end of opening nav bar 
+
+
+
+
+
 // Remove Menu
 
 const navLink = document.querySelectorAll('.nav__link'),

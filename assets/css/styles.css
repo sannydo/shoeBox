@@ -404,7 +404,12 @@
     /* OFFER */
 
     .offer__container{
-        row-gap: 2rem;
+        /* row-gap: 2rem;
+        justify-content: center; */
+        grid-template-columns: 55% 45%;
+        column-gap: 0;
+        background-color: var(--dark-color-lighten);
+        border-radius: .5rem;
         justify-content: center;
     }
 
@@ -418,8 +423,14 @@
         transition: .3s;
     }
 
+    .offer__title{
+        font-size: var(--biggest-font-size);
+        margin-bottom: .25rem;
+    }
+
     .offer__data{
         align-self: flex-end;
+        padding: 4rem 0 4rem 1.5rem;
     }
 
     .offer__img{
@@ -427,6 +438,7 @@
         top: 0;
         right: 0;
         width: 180px;
+       
     }
 
     .offer__name{
@@ -435,7 +447,7 @@
     }
 
     .offer__description{
-        margin-bottom: var(--mb-2);
+        margin-bottom: var(--mb-3);
     }
 
     .offer__card:hover{

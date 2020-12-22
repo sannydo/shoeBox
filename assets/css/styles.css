@@ -290,6 +290,7 @@
     .featured__container{
         row-gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin-left: 5rem; 
         
         
     }
@@ -458,9 +459,26 @@
 
     /* NEW SECTION */
 
+   
+
     .new__container{
         row-gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin-left: 5rem; 
+        
+        
+    }
+
+    .new__sneaker{
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        background-color: var(--dark-color-lighten);
+        border-radius: .5rem;
+        transition: .3s;
+        
     }
 
     .new__mens{
@@ -478,10 +496,14 @@
         
         
     }
+
+    .new__card:hover{
+        transform: translateY(-.5rem);
+    }
     
     
     .new__title{
-        font-size: var(--bigger-font-size);
+        font-size: var(--big-font-size);
         margin-bottom: .25rem;
     }
 
@@ -490,11 +512,7 @@
         margin-bottom: var(--mb-3);
     }
 
-    .new__sneaker{
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
+   
 
     .new__sneaker-card{
        position: relative; 
@@ -509,6 +527,10 @@
 
     .new__sneaker-img{
         width: 220px;
+        margin-top: var(--mb-3);
+        margin-bottom: var(--mb-6);
+        transform: var(--rotate-img);
+        filter: drop-shadow(0 12px 8px rgba(0,0,0,.2));
     }
 
     /* NEWSLETTER */

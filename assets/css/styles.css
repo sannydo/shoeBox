@@ -431,6 +431,7 @@
     .offer__data{
         align-self: flex-end;
         padding: 4rem 0 4rem 1.5rem;
+        padding: 2rem;
     }
 
     .offer__img{
@@ -438,6 +439,7 @@
         top: 0;
         right: 0;
         width: 180px;
+       
        
     }
 
@@ -450,9 +452,9 @@
         margin-bottom: var(--mb-3);
     }
 
-    .offer__card:hover{
+     .offer__card:hover{
         transform: translateY(-.5rem);
-    }
+    } 
 
     /* NEW SECTION */
 
@@ -460,25 +462,54 @@
         row-gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
+
+    .new__mens{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--dark-color-lighten);
+        border-radius: .5rem;
+        padding: 2rem;
+    }
+
+    .new__mens-img{
+        width:  500px;
+        margin-bottom: var(--mb-3);
+        
+        
+    }
     
-    /* Need to add image */
-    /* .new__img */
+    
+    .new__title{
+        font-size: var(--bigger-font-size);
+        margin-bottom: .25rem;
+    }
 
-    /* .new__card{
+    .new__price{
+        display: block;
+        margin-bottom: var(--mb-3);
+    }
+
+    .new__sneaker{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .new__sneaker-card{
+       position: relative;
+       padding: 3.5rem 1.5rem;
+       background-color: var(--dark-color-lighten); 
+       border-radius: .5rem;
+       overflow: hidden;
+       display: flex;
+       justify-content: center;
 
     }
 
-    .new__data{
-
+    .new__sneaker-img{
+        width: 220px;
     }
-
-    .new__name{
-
-    }
-
-    .new__description{
-
-    } */
 
     /* NEWSLETTER */
 

@@ -347,6 +347,23 @@
         transform: translateY(-.5rem);
     }
 
+    .sneaker__pages{
+        margin-top: var(--mb-6);
+        
+    }
+
+    .sneaker__page{
+        padding: .5rem 1rem;
+        border: 1px solid var(--dark-color);
+       
+    }
+
+    .sneaker__page:hover{
+        background-color: var(--dark-color);
+        color: var(--white-color);
+       
+    } 
+
 
     /* COLLECTION */
 
@@ -583,7 +600,7 @@
 
     /* FOOTER */
     .footer__container{
-        grid-template-columns: repeat(auto-fit, minmax(220px. 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px 1fr));
     }
 
     .footer__box{
